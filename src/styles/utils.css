@@ -43,9 +43,15 @@ main {
   font-size: 2rem;
   padding-top: 2rem;
 }
+.inputs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
 .spacing-input {
   display: flex;
   gap: 1rem;
   align-items: center;
-  margin-top: 1rem;
 }
