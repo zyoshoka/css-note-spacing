@@ -1,0 +1,30 @@
+{
+  "name": "css-note-spacing",
+  "version": "0.1.0",
+  "description": "Simulate note spacing with CSS",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zyoshoka/css-note-spacing.git"
+  },
+  "type": "module",
+  "license": "SEE LICENSE IN README.md",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/react": "^2.2.1",
+    "@astrojs/ts-plugin": "^1.1.1",
+    "@types/react": "^18.2.20",
+    "astro": "^2.10.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "eslint-plugin-editorconfig": "^4.0.3"
+  }
+}

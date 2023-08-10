@@ -1,0 +1,50 @@
+html {
+  font-family: system-ui, sans-serif;
+  background-color: white;
+}
+body {
+  margin: 0;
+}
+main {
+  padding-top: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+@font-face {
+  font-family: 'Bravura';
+  src: url('/fonts/Bravura.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.bravura {
+  font-family: 'Bravura';
+}
+.note-buttons {
+  display: flex;
+  gap: 2rem;
+}
+.note-button {
+  font-size: 2rem;
+  line-height: 0;
+  padding: 2.8rem 1.5rem 0.5rem 1.5rem;
+  border: solid #999 thin;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+}
+.boxes {
+  display: flex;
+  margin-top: 1rem;
+  height: 100px;
+}
+.box {
+  display: flex;
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+.spacing-input {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1rem;
+}
