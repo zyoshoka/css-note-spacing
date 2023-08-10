@@ -6,7 +6,7 @@ body {
   margin: 0;
 }
 main {
-  padding-top: 2rem;
+  padding: 1.5rem;
   max-width: 800px;
   margin: auto;
 }
@@ -22,7 +22,8 @@ main {
 }
 .note-buttons {
   display: flex;
-  gap: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 .note-button {
   font-size: 2rem;
