@@ -6,18 +6,8 @@ import type { Note } from './Notes';
 
 export default function SpacingSimulator() {
   const [notes, setNotes] = useState<Note[]>([]);
-  function addNotes(note: Note) {
-    setNotes([...notes, note]);
-  }
   const [spacingRatio, setSpacingRatio] = useState<number>(1.6);
-  function handleSliderChange(event: React.ChangeEvent<HTMLInputElement>) {
-    setSpacingRatio(Number(event.target.value));
-  }
   const [allowCollision, setAllowCollision] = useState<boolean>(true);
-  function handleCheckboxChange(event: React.ChangeEvent<HTMLInputElement>) {
-    setAllowCollision(event.target.checked);
-  }
-
   const noteRatios = calculateRatio(notes, spacingRatio);
 
   return (
@@ -26,7 +16,7 @@ export default function SpacingSimulator() {
         {defaultNotes.map((button, index) => (
           <button
             key={index}
-            onClick={() => addNotes(button)}
+            onClick={() => setNotes([...notes, button])}
             className="note-button bravura"
           >
             {button.smuflChar}
@@ -41,7 +31,7 @@ export default function SpacingSimulator() {
             max={2}
             step={0.1}
             value={spacingRatio}
-            onChange={handleSliderChange}
+            onChange={event => setSpacingRatio(Number(event.target.value))}
             autoComplete="off"
           />
           {spacingRatio}
@@ -50,7 +40,7 @@ export default function SpacingSimulator() {
           <input
             type="checkbox"
             checked={allowCollision}
-            onChange={handleCheckboxChange}
+            onChange={event => setAllowCollision(event.target.checked)}
             autoComplete="off"
           />
           Allow collision
