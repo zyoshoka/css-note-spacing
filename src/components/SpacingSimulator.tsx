@@ -59,7 +59,7 @@ export default function SpacingSimulator() {
       <section className="boxes">
         {noteRatios.map(({ smuflChar, ratio }, index) => (
           <div key={index} style={{ flex: ratio }} className="box bravura">
-            <div style={{ position: allowCollision ? 'absolute' : 'inherit' }}>
+            <div style={{ position: allowCollision ? 'absolute' : 'inherit', whiteSpace: 'nowrap' }}>
               {smuflChar}
             </div>
           </div>
