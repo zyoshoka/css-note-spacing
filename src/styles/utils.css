@@ -49,8 +49,11 @@ main {
   gap: 2rem;
   margin-top: 1.5rem;
 }
-.spacing-input {
+.ratio-input {
   display: flex;
   gap: 1rem;
   align-items: center;
+}
+.ratio-value {
+  width: 2rem;
 }

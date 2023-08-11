@@ -24,7 +24,7 @@ export default function SpacingSimulator() {
         ))}
       </div>
       <div className="inputs">
-        <div className="spacing-input">
+        <div className="ratio-input">
           <input
             type="range"
             min={1}
@@ -34,7 +34,7 @@ export default function SpacingSimulator() {
             onChange={event => setSpacingRatio(Number(event.target.value))}
             autoComplete="off"
           />
-          {spacingRatio}
+          <div className="ratio-value">{spacingRatio}</div>
         </div>
         <label>
           <input
