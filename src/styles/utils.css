@@ -41,7 +41,6 @@ main {
 .box {
   display: flex;
   font-size: 2rem;
-  padding-top: 2rem;
 }
 .inputs {
   display: flex;
