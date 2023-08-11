@@ -43,3 +43,10 @@ export const defaultNotes: Note[] = [
     smuflChar: '\uE1DD',
   },
 ];
+export const dottedNotes: Note[] = defaultNotes.map((note) => {
+  return {
+    value: note.value + note.value / 2,
+    name: `${note.name}-dotted`,
+    smuflChar: `${note.smuflChar} \uE1E7`,
+  };
+});

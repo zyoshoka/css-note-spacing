@@ -1,19 +1,20 @@
 import { useState } from 'react';
 
 import calculateRatio from './calculateRatio';
-import { defaultNotes } from './Notes';
+import { defaultNotes, dottedNotes } from './Notes';
 import type { Note } from './Notes';
 
 export default function SpacingSimulator() {
   const [notes, setNotes] = useState<Note[]>([]);
   const [spacingRatio, setSpacingRatio] = useState<number>(1.6);
   const [allowCollision, setAllowCollision] = useState<boolean>(true);
+  const [isDotted, setIsDotted] = useState<boolean>(false);
   const noteRatios = calculateRatio(notes, spacingRatio);
 
   return (
     <>
       <div className="note-buttons">
-        {defaultNotes.map((button, index) => (
+        {(isDotted ? dottedNotes : defaultNotes).map((button, index) => (
           <button
             key={index}
             onClick={() => setNotes([...notes, button])}
@@ -44,6 +45,15 @@ export default function SpacingSimulator() {
             autoComplete="off"
           />
           Allow collision
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            checked={isDotted}
+            onChange={event => setIsDotted(event.target.checked)}
+            autoComplete="off"
+          />
+          Dotted note
         </label>
       </div>
       <section className="boxes">
