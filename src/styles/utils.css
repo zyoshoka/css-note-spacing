@@ -28,7 +28,8 @@ main {
 .note-button {
   font-size: 2rem;
   line-height: 0;
-  padding: 2.8rem 1.5rem 0.5rem 1.5rem;
+  padding: 2.8rem 0 0.5rem;
+  width: 4rem;
   color: inherit;
   border: solid #999 thin;
   border-radius: 20px;
