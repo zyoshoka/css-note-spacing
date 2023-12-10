@@ -1,21 +1,21 @@
 {
-  "compilerOptions": {
-    "baseUrl": ".",
-    "target": "esnext",
-    "jsx": "react-jsx",
-    "module": "esnext",
-    "paths": {
-      "@components/*": ["src/components/*"],
-      "@layouts/*": ["src/layouts/*"],
-      "@styles/*": ["src/styles/*"]
-    },
-    "plugins": [
-      {
-        "name": "@astrojs/ts-plugin"
-      }
-    ],
-    "strict": true
-  },
-  "extends": "astro/tsconfigs/strict",
-  "include": ["src/**/*"]
+	"compilerOptions": {
+		"baseUrl": ".",
+		"target": "esnext",
+		"jsx": "react-jsx",
+		"module": "esnext",
+		"paths": {
+			"@components/*": ["src/components/*"],
+			"@layouts/*": ["src/layouts/*"],
+			"@styles/*": ["src/styles/*"]
+		},
+		"plugins": [
+			{
+				"name": "@astrojs/ts-plugin"
+			}
+		],
+		"strict": true
+	},
+	"extends": "astro/tsconfigs/strict",
+	"include": ["src/**/*"]
 }

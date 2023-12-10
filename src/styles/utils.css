@@ -1,61 +1,61 @@
 html {
-  font-family: system-ui, sans-serif;
-  background-color: white;
+	font-family: system-ui, sans-serif;
+	background-color: white;
 }
 body {
-  margin: 0;
+	margin: 0;
 }
 main {
-  padding: 1.5rem;
-  max-width: 800px;
-  margin: auto;
+	padding: 1.5rem;
+	max-width: 800px;
+	margin: auto;
 }
 @font-face {
-  font-family: 'Bravura';
-  src: url('/public/fonts/Bravura.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Bravura';
+	src: url('/public/fonts/Bravura.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
 .bravura {
-  font-family: 'Bravura';
+	font-family: 'Bravura';
 }
 .note-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
 }
 .note-button {
-  font-size: 2rem;
-  line-height: 0;
-  padding: 2.8rem 0 0.5rem;
-  width: 4rem;
-  color: inherit;
-  border: solid #999 thin;
-  border-radius: 20px;
-  background-color: rgb(255, 255, 255);
+	font-size: 2rem;
+	line-height: 0;
+	padding: 2.8rem 0 0.5rem;
+	width: 4rem;
+	color: inherit;
+	border: solid #999 thin;
+	border-radius: 20px;
+	background-color: rgb(255, 255, 255);
 }
 .boxes {
-  display: flex;
-  margin-top: 1rem;
-  height: 100px;
+	display: flex;
+	margin-top: 1rem;
+	height: 100px;
 }
 .box {
-  display: flex;
-  font-size: 2rem;
+	display: flex;
+	font-size: 2rem;
 }
 .inputs {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 2rem;
-  margin-top: 1.5rem;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 2rem;
+	margin-top: 1.5rem;
 }
 .ratio-input {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
+	display: flex;
+	gap: 1rem;
+	align-items: center;
 }
 .ratio-value {
-  width: 2rem;
+	width: 2rem;
 }
