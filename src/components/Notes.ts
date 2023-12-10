@@ -1,12 +1,12 @@
 export interface Note {
 	value: number;
-	name: string;
-	smuflChar: string;
+	name: string | null;
+	smuflChar: string | null;
 }
 export interface NoteRatio extends Note {
 	ratio: number;
 }
-export const defaultNotes: Note[] = [
+export const defaultNotes: Readonly<Note>[] = [
 	{
 		value: 1,
 		name: 'whole',

@@ -14,6 +14,7 @@ module.exports = {
 		'plugin:astro/recommended',
 		'plugin:import/recommended',
 		'plugin:import/typescript',
+		'plugin:react/recommended',
 	],
 	'overrides': [
 		{
