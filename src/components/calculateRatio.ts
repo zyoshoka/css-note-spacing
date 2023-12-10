@@ -6,7 +6,7 @@ export default function calculateRatio(notes: Note[], spacingRatio: number) {
 		...note,
 		ratio: round(
 			Math.pow(spacingRatio, Math.log2(note.value / minNoteValue)),
-			6
+			6,
 		),
 	}));
 

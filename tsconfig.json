@@ -17,5 +17,8 @@
 		"strict": true
 	},
 	"extends": "astro/tsconfigs/strict",
-	"include": ["src/**/*"]
+	"include": [
+    ".eslintrc.cjs",
+		"src/**/*"
+	]
 }
